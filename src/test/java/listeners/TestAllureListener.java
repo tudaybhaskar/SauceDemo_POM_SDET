@@ -13,6 +13,11 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.listener.TestLifecycleListener;
 import util.ExcelUtil;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 public class TestAllureListener extends BaseClass implements ITestListener ,TestLifecycleListener{
 
 	private static String getTestMethodName(ITestResult iTestResult) {
@@ -84,4 +89,7 @@ public class TestAllureListener extends BaseClass implements ITestListener ,Test
 		  
 	}*/
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
