@@ -1,6 +1,7 @@
+listeners/TestStatusListener.class
 listeners/TestAllureListener.class
 listeners/RetryAnalyzer.class
-listeners/AnnotationTransformer.class
 pageTests/ProductsPageTest.class
 pageTests/LoginPageTest.class
+listeners/AnnotationTransformer.class
 pageTests/YourCartPageTest.class

@@ -1,145 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="121.324" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="119.098" tests="7" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="PATH" value="/usr/bin:/bin:/usr/sbin:/sbin"/>
+    <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/8/display/redirect"/>
-    <property name="HUDSON_HOME" value="/Users/udayabhaskar/.jenkins"/>
     <property name="sun.cpu.isalist" value=""/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/8/display/redirect?page=changes"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="JENKINS_SERVER_COOKIE" value="2318ffe76a03fa78"/>
-    <property name="JENKINS_URL" value="http://localhost:8080/"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.19/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central /Users/udayabhaskar/.jenkins/war/WEB-INF/lib/remoting-3107.v665000b_51092.jar /Users/udayabhaskar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar /Users/udayabhaskar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar 50798"/>
-    <property name="maven.home" value="/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="POM_GROUPID" value="SauceDemo_POM_SDET"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="jansi.mode" value="strip"/>
-    <property name="java.version.date" value="2023-04-18"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@11/11.0.19/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="JENKINS_HOME" value="/Users/udayabhaskar/.jenkins"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="NODE_NAME" value="built-in"/>
-    <property name="XPC_FLAGS" value="0x0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="BUILD_DISPLAY_NAME" value="#8"/>
-    <property name="maven3.interceptor" value="/Users/udayabhaskar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar"/>
-    <property name="PATH+MAVEN" value="/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central/bin"/>
-    <property name="maven3.interceptor.common" value="/Users/udayabhaskar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar"/>
-    <property name="WORKSPACE_TMP" value="/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET@tmp"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.19+0"/>
-    <property name="user.name" value="udayabhaskar"/>
-    <property name="POM_ARTIFACTID" value="SauceDemo_POM_SDET"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="WORKSPACE" value="/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="java.io.tmpdir" value="/var/folders/m_/37rcs6fj2b94rbwps3b2q9w80000gn/T/"/>
-    <property name="java.version" value="11.0.19"/>
-    <property name="CI" value="true"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="JOB_BASE_NAME" value="SauceDemo_POM_SDET"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="java.library.path" value="/Users/udayabhaskar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="BUILD_NUMBER" value="8"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/8/"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/8/display/redirect?page=artifacts"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="POM_DISPLAYNAME" value="SauceDemo_POM_SDET"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="gopherProxySet" value="false"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/"/>
-    <property name="java.class.path" value="/Users/udayabhaskar/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.14.jar:/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central/boot/plexus-classworlds-2.7.0.jar:/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central/conf/logging"/>
+    <property name="java.class.path" value="/Users/udayabhaskar/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558/jars/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.vendor" value="Homebrew"/>
-    <property name="MAVEN_HOME" value="/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
-    <property name="maven.conf" value="/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central/conf"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="11"/>
-    <property name="LOGNAME" value="udayabhaskar"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/8/display/redirect?page=tests"/>
-    <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.19/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always clean install"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="BUILD_TAG" value="jenkins-SauceDemo_POM_SDET-8"/>
-    <property name="SHELL" value="/bin/zsh"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET/EMBEDDED"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/udayabhaskar"/>
     <property name="user.language" value="en"/>
-    <property name="TMPDIR" value="/var/folders/m_/37rcs6fj2b94rbwps3b2q9w80000gn/T/"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@11/11.0.19/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/SauceDemo_POM_SDET/display/redirect"/>
-    <property name="M2_HOME" value="/Users/udayabhaskar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_Central"/>
-    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0"/>
-    <property name="POM_PACKAGING" value="jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.19+0"/>
+    <property name="user.name" value="udayabhaskar"/>
     <property name="path.separator" value=":"/>
-    <property name="BUILD_ID" value="8"/>
     <property name="os.version" value="13.0"/>
-    <property name="JOB_NAME" value="SauceDemo_POM_SDET"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="NODE_LABELS" value="built-in"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="XPC_SERVICE_NAME" value="homebrew.mxcl.jenkins-lts"/>
+    <property name="java.vendor.version" value="Homebrew"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/m_/37rcs6fj2b94rbwps3b2q9w80000gn/T/"/>
+    <property name="java.version" value="11.0.19"/>
     <property name="user.dir" value="/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET"/>
     <property name="os.arch" value="aarch64"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="HUDSON_SERVER_COOKIE" value="2318ffe76a03fa78"/>
-    <property name="USER" value="udayabhaskar"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.9vwgRUJsM2/Listeners"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="m2e.build.project.data.socket.port" value="49756"/>
+    <property name="java.library.path" value="/Users/udayabhaskar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Homebrew"/>
     <property name="java.vm.version" value="11.0.19+0"/>
-    <property name="JAVA_MAIN_CLASS_563" value="executable.Main"/>
+    <property name="classworlds.conf" value="/Users/udayabhaskar/Documents/eclipseWorkspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf18112867002380332164.tmp"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
-    <property name="HOME" value="/Users/udayabhaskar"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="verifyTitle_YourCartPage" classname="pageTests.YourCartPageTest" time="8.236"/>
-  <testcase name="verify_Product_In_Cart" classname="pageTests.YourCartPageTest" time="8.048"/>
-  <testcase name="verify_removeProduct_From_CartPage" classname="pageTests.YourCartPageTest" time="18.331">
-    <failure message="Product from cart is not removed expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Product from cart is not removed expected [true] but found [false]
-	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:108)
+  <testcase name="verifyTitle_YourCartPage" classname="pageTests.YourCartPageTest" time="8.215"/>
+  <testcase name="verify_Product_In_Cart" classname="pageTests.YourCartPageTest" time="8.221"/>
+  <testcase name="verify_removeProduct_From_CartPage" classname="pageTests.YourCartPageTest" time="18.503">
+    <failure message="The following asserts failed:&#10;	Product from cart is not removed expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Product from cart is not removed expected [true] but found [false]
+	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
 </failure>
     <system-out><![CDATA[I am in onTestSuccess method verify_Product_In_Cart succeed
-[[Ljava.lang.Object;@9214725
+[[Ljava.lang.Object;@6124a7c0
 I am in onTestStart method verify_removeProduct_From_CartPage start
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 51276
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 28, 2023 4:34:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[May 29, 2023 8:11:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 28, 2023 4:34:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 110
-May 28, 2023 4:34:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 113 of 110
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@class='inventory_item_name' and text()='Sauce Labs Bike Light']/parent::a/following-sibling::div[@class='item_pricebar']/button (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'Udayas-MacBook-Air.local', ip: '2401:4900:1f20:155a:d876:e379:6422:e8%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/m_/37rcs6fj2b9...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 51efd4757d0409122c330029fb85d53d
+System info: host: 'Udayas-MacBook-Air.local', ip: '2401:4900:1f20:155a:fdf0:2c0:2df7:6ca1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/m_/37rcs6fj2b9...}, goog:chromeOptions: {debuggerAddress: localhost:49802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.2:4444/sessi..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0f08ed78caaf5697d360c64abc95e4f
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at pages.YourCartPage.removeProduct_From_Cart(YourCartPage.java:68)
-	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
+	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,8 +121,8 @@ Session ID: 51efd4757d0409122c330029fb85d53d
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="addProductToCart" classname="pageTests.ProductsPageTest" time="5.471"/>
-  <testcase name="verifyProductIsPresent" classname="pageTests.ProductsPageTest" time="5.319"/>
-  <testcase name="verifyProductsPageTitle" classname="pageTests.ProductsPageTest" time="5.094"/>
-  <testcase name="verifyLoginPageTest" classname="pageTests.LoginPageTest" time="7.418"/>
+  <testcase name="addProductToCart" classname="pageTests.ProductsPageTest" time="5.525"/>
+  <testcase name="verifyProductIsPresent" classname="pageTests.ProductsPageTest" time="5.424"/>
+  <testcase name="verifyProductsPageTitle" classname="pageTests.ProductsPageTest" time="5.101"/>
+  <testcase name="verifyLoginPageTest" classname="pageTests.LoginPageTest" time="7.432"/>
 </testsuite>

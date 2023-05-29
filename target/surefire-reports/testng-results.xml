@@ -2,54 +2,54 @@
 <testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-28T16:33:50 IST" name="Suite" finished-at="2023-05-28T16:35:50 IST" duration-ms="120632">
+  <suite started-at="2023-05-29T08:10:36 IST" name="Suite" finished-at="2023-05-29T08:12:35 IST" duration-ms="118419">
     <groups>
     </groups>
-    <test started-at="2023-05-28T16:33:50 IST" name="Test - SauceLabs Demo Website" finished-at="2023-05-28T16:35:50 IST" duration-ms="120632">
+    <test started-at="2023-05-29T08:10:36 IST" name="Test - SauceLabs Demo Website" finished-at="2023-05-29T08:12:35 IST" duration-ms="118419">
       <class name="pageTests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:34:52 IST" name="setUp" finished-at="2023-05-28T16:35:01 IST" duration-ms="8735" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:11:41 IST" name="setUp" finished-at="2023-05-29T08:11:49 IST" duration-ms="8191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:01 IST" name="addProductToCart" finished-at="2023-05-28T16:35:07 IST" duration-ms="5470" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:11:49 IST" name="addProductToCart" finished-at="2023-05-29T08:11:54 IST" duration-ms="5524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:07 IST" name="tearDown" finished-at="2023-05-28T16:35:07 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:11:54 IST" name="tearDown" finished-at="2023-05-29T08:11:54 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:07 IST" name="setUp" finished-at="2023-05-28T16:35:16 IST" duration-ms="8870" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:11:54 IST" name="setUp" finished-at="2023-05-29T08:12:03 IST" duration-ms="8187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductIsPresent()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:16 IST" name="verifyProductIsPresent" finished-at="2023-05-28T16:35:21 IST" duration-ms="5318" status="PASS">
+        <test-method signature="verifyProductIsPresent()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:12:03 IST" name="verifyProductIsPresent" finished-at="2023-05-29T08:12:08 IST" duration-ms="5423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductIsPresent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:21 IST" name="tearDown" finished-at="2023-05-28T16:35:21 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:12:08 IST" name="tearDown" finished-at="2023-05-29T08:12:08 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:21 IST" name="setUp" finished-at="2023-05-28T16:35:31 IST" duration-ms="9604" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:12:08 IST" name="setUp" finished-at="2023-05-29T08:12:16 IST" duration-ms="8216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductsPageTitle()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:31 IST" name="verifyProductsPageTitle" finished-at="2023-05-28T16:35:36 IST" duration-ms="5093" status="PASS">
+        <test-method signature="verifyProductsPageTitle()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:12:16 IST" name="verifyProductsPageTitle" finished-at="2023-05-29T08:12:22 IST" duration-ms="5099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductsPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@554cd74a]" started-at="2023-05-28T16:35:36 IST" name="tearDown" finished-at="2023-05-28T16:35:36 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ProductsPageTest@3d8b319e]" started-at="2023-05-29T08:12:22 IST" name="tearDown" finished-at="2023-05-29T08:12:22 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pageTests.ProductsPageTest -->
       <class name="pageTests.YourCartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:33:55 IST" name="setUp" finished-at="2023-05-28T16:34:05 IST" duration-ms="9329" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:10:42 IST" name="setUp" finished-at="2023-05-29T08:10:53 IST" duration-ms="11127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle_YourCartPage(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:05 IST" name="verifyTitle_YourCartPage" description="To verify title of the Page : Your Cart" data-provider="getCredentialsTestData" finished-at="2023-05-28T16:34:13 IST" duration-ms="8218" status="PASS">
+        <test-method signature="verifyTitle_YourCartPage(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:10:53 IST" name="verifyTitle_YourCartPage" description="To verify title of the Page : Your Cart" data-provider="getCredentialsTestData" finished-at="2023-05-29T08:11:02 IST" duration-ms="8198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,15 +65,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle_YourCartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:13 IST" name="tearDown" finished-at="2023-05-28T16:34:13 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:02 IST" name="tearDown" finished-at="2023-05-29T08:11:02 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:13 IST" name="setUp" finished-at="2023-05-28T16:34:19 IST" duration-ms="5977" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:02 IST" name="setUp" finished-at="2023-05-29T08:11:07 IST" duration-ms="5827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Product_In_Cart(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:19 IST" name="verify_Product_In_Cart" description="Adding product to Cart" data-provider="getCredentialsTestData" finished-at="2023-05-28T16:34:27 IST" duration-ms="8047" status="PASS">
+        <test-method signature="verify_Product_In_Cart(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:07 IST" name="verify_Product_In_Cart" description="Adding product to Cart" data-provider="getCredentialsTestData" finished-at="2023-05-29T08:11:16 IST" duration-ms="8217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,15 +89,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Product_In_Cart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:27 IST" name="tearDown" finished-at="2023-05-28T16:34:28 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:16 IST" name="tearDown" finished-at="2023-05-29T08:11:16 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:28 IST" name="setUp" finished-at="2023-05-28T16:34:34 IST" duration-ms="5916" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:16 IST" name="setUp" finished-at="2023-05-29T08:11:22 IST" duration-ms="5938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_removeProduct_From_CartPage(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:34 IST" name="verify_removeProduct_From_CartPage" description="Removing product from Cart" data-provider="getCredentialsTestData" finished-at="2023-05-28T16:34:52 IST" duration-ms="18321" status="FAIL">
+        <test-method signature="verify_removeProduct_From_CartPage(java.lang.String,java.lang.String)[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:22 IST" name="verify_removeProduct_From_CartPage" description="Removing product from Cart" data-provider="getCredentialsTestData" finished-at="2023-05-29T08:11:40 IST" duration-ms="18492" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -112,16 +112,15 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Product from cart is not removed expected [true] but found [false]]]>
+              <![CDATA[The following asserts failed:
+Product from cart is not removed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product from cart is not removed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:976)
-at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:108)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Product from cart is not removed expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,21 +158,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_removeProduct_From_CartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@6f4ade6e]" started-at="2023-05-28T16:34:52 IST" name="tearDown" finished-at="2023-05-28T16:34:52 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.YourCartPageTest@7aa9e414]" started-at="2023-05-29T08:11:41 IST" name="tearDown" finished-at="2023-05-29T08:11:41 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pageTests.YourCartPageTest -->
       <class name="pageTests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.LoginPageTest@37ed010a]" started-at="2023-05-28T16:35:36 IST" name="setUp" finished-at="2023-05-28T16:35:43 IST" duration-ms="6526" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.LoginPageTest@27a97e08]" started-at="2023-05-29T08:12:22 IST" name="setUp" finished-at="2023-05-29T08:12:27 IST" duration-ms="5642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTest()[pri:0, instance:pageTests.LoginPageTest@37ed010a]" started-at="2023-05-28T16:35:43 IST" name="verifyLoginPageTest" finished-at="2023-05-28T16:35:50 IST" duration-ms="7416" status="PASS">
+        <test-method signature="verifyLoginPageTest()[pri:0, instance:pageTests.LoginPageTest@27a97e08]" started-at="2023-05-29T08:12:27 IST" name="verifyLoginPageTest" finished-at="2023-05-29T08:12:35 IST" duration-ms="7430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.LoginPageTest@37ed010a]" started-at="2023-05-28T16:35:50 IST" name="tearDown" finished-at="2023-05-28T16:35:50 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.LoginPageTest@27a97e08]" started-at="2023-05-29T08:12:35 IST" name="tearDown" finished-at="2023-05-29T08:12:35 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

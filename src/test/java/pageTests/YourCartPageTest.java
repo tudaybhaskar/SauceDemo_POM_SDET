@@ -1,16 +1,11 @@
 package pageTests;
 
-<<<<<<< HEAD
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 import java.net.MalformedURLException;
 import java.util.Map;
 import java.util.Properties;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
@@ -76,11 +71,7 @@ public class YourCartPageTest extends BaseClass  {
 		productsPage.selectProduct_AddToCart(product);
 		yourCartPage = productsPage.clickOnCart();
 		String actualtitle = yourCartPage.getPageTitle();
-<<<<<<< HEAD
-		Assert.assertEquals(actualtitle, "Your Cart", "Your cart page is not displayed");
-=======
 		softAssert.assertEquals(actualtitle, "Your Cart", "Your cart page is not displayed");
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 		softAssert.assertAll();
 	}
 	
@@ -96,11 +87,7 @@ public class YourCartPageTest extends BaseClass  {
 		yourCartPage = productsPage.clickOnCart();
 		String productFromCart = yourCartPage.getProduct_From_Cart();
 		//ExcelUtil.writeDataToExcel("UserCredentials","verify_Product_In_Cart");
-<<<<<<< HEAD
-		Assert.assertEquals(productFromCart, product,"Product : " + product +" is not added to Cart");
-=======
 		softAssert.assertEquals(productFromCart, product,"Product : " + product +" is not added to Cart");
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 		softAssert.assertAll();	
 	}
 	
@@ -116,11 +103,7 @@ public class YourCartPageTest extends BaseClass  {
 		yourCartPage = productsPage.clickOnCart();
 		String productFromCart = yourCartPage.getProduct_From_Cart();
 		boolean actual = yourCartPage.removeProduct_From_Cart(productFromCart);
-<<<<<<< HEAD
-		Assert.assertEquals(actual, true, "Product from cart is not removed");
-=======
 		softAssert.assertEquals(actual, true, "Product from cart is not removed");
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 		softAssert.assertAll();
 	}
 	
@@ -131,17 +114,10 @@ public class YourCartPageTest extends BaseClass  {
 		return data;
 	}
 	
-<<<<<<< HEAD
 
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 	@AfterMethod
 	  public void tearDown() {
 		driver.quit();	
 	  }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd

@@ -13,12 +13,9 @@ public class ExcelUtil {
 	
 	public static Workbook book;
 	public static Sheet sheet;
-	
-<<<<<<< HEAD
+
 	public static String TESTDATA_SHEET_PATH = "/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET/src/main/java/testdata/SauceDemoTestData.xlsx";
-=======
-	public static String TESTDATA_SHEET_PATH = "/Users/utippana/LearnAutomation/SauceDemoProject_TestBase/src/main/java/testdata/SauceDemoTestData.xlsx";
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
+
 	
 	public static Object[][] getTestData(String sheetName){
 		

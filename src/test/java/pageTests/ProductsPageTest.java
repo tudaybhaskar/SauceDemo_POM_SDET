@@ -1,39 +1,28 @@
 package pageTests;
 
-<<<<<<< HEAD
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
-import org.testng.AssertJUnit;
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 import java.net.MalformedURLException;
 import java.util.Map;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-<<<<<<< HEAD
-import base.BaseClass;
-=======
 
 import base.BaseClass;
-
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 import pages.LoginPage;
 import pages.ProductsPage;
 import util.CustomJavaUtils;
 import util.TestUtil;
 
-<<<<<<< HEAD
+
 @Listeners({ listeners.TestAllureListener.class })
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 public class ProductsPageTest extends BaseClass {
 	
 	WebDriver driver;
@@ -79,7 +68,4 @@ public class ProductsPageTest extends BaseClass {
 	  driver.quit();
   }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd

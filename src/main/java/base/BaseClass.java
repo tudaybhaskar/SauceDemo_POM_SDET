@@ -26,11 +26,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 		WebDriver driver;
 		Properties prop;
-<<<<<<< HEAD
+
 		String hubURL = "http://192.168.1.2:4444";
-=======
-		String hubURL = "http://192.168.1.5:4444";
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
 		
 		private static ThreadLocal<WebDriver> tdriver =  new ThreadLocal<WebDriver>();
 		
@@ -47,27 +44,22 @@ public class BaseClass {
 			String browser = prop.getProperty("browser");
 		
 			if (browser.equals("chrome")) {
-<<<<<<< HEAD
-				System.setProperty("webdriver.chrome.driver","/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET/browserDrivers/chromedriver");
+
+				//System.setProperty("webdriver.chrome.driver","/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET/browserDrivers/chromedriver");
 				//driver = new ChromeDriver();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
 				
-				
 				//WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(options);
-=======
+				//driver = new ChromeDriver(options);
+
 				DesiredCapabilities cap =  new DesiredCapabilities();
 				cap.setBrowserName("chrome");
 				cap.setPlatform(Platform.MAC);
-				//driver = new ChromeDriver();
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--remote-allow-origins=*");
-				options.merge(cap);
 				
-				//WebDriverManager.chromedriver().setup();
+				options.merge(cap);
 				driver = new RemoteWebDriver(new URL(hubURL),options);
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
+
 				
 			} else if (browser.equals("safari")) {
 				WebDriverManager.getInstance(SafariDriver.class).setup();
@@ -106,7 +98,4 @@ public class BaseClass {
 		}
 
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
