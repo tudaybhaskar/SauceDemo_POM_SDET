@@ -4,38 +4,25 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< HEAD
   <groupId>SauceDemo_POM_SDET</groupId>
   <artifactId>SauceDemo_POM_SDET</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <name>SauceDemo_POM_SDET</name>
-  <!-- FIXME change it to the project's website -->
-=======
-  <groupId>learnSelenium</groupId>
-  <artifactId>SauceDemoProject_TestBase</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-
-  <name>SauceDemoProject_TestBase</name>
-  
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-<<<<<<< HEAD
-  	<selenium-version>4.8.1</selenium-version>
-=======
     <selenium-version>4.8.1</selenium-version>
->>>>>>> f5175878247a5f893a0168f1ba8f5f385cd2c0cd
-  	<testng.version>7.6.1</testng.version>
-  	<log4j-version>2.14.1</log4j-version>
-  	<aspectj.version>1.9.6</aspectj.version>
-  	<extentreports-version>5.0.8</extentreports-version>
-  	<ashot-version>1.5.4</ashot-version>
-  	<suiteXmlFile>testng.xml</suiteXmlFile>
+    <testng.version>7.6.1</testng.version>
+    <log4j-version>2.14.1</log4j-version>
+    <aspectj.version>1.9.6</aspectj.version>
+    <extentreports-version>5.0.8</extentreports-version>
+    <ashot-version>1.5.4</ashot-version>
+    <suiteXmlFile>testng.xml</suiteXmlFile>
+	
   </properties>
 
   <dependencies>
