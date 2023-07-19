@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 28 16:55:47 IST 2023</td>
+<td>Started on:</td><td>Wed Jul 19 22:59:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>116 seconds (116952 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69036 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='pageTests.YourCartPageTest.verify_removeProduct_From_CartPage()'><b>verify_removeProduct_From_CartPage</b><br>Test class: pageTests.YourCartPageTest<br>Test method: Removing product from Cart<br>Parameters: standard_user, secret_sauce</td>
-<td><div><pre>java.lang.AssertionError: Product from cart is not removed expected [true] but found [false]
-	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:108)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Product from cart is not removed expected [true] but found [false]
+	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273065937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1273065937'><pre>java.lang.AssertionError: Product from cart is not removed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:819)
-	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:108)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998748447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998748447'><pre>java.lang.AssertionError: The following asserts failed:
+	Product from cart is not removed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,8 +115,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
-<td>pageTests.YourCartPageTest@1d540566</td></tr>
+<td>16</td>
+<td>pageTests.YourCartPageTest@1abfe081</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,35 +126,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pageTests.ProductsPageTest.verifyProductIsPresent()'><b>verifyProductIsPresent</b><br>Test class: pageTests.ProductsPageTest</td>
-<td></td>
-<td>5</td>
-<td>pageTests.ProductsPageTest@618ad2aa</td></tr>
-<tr>
 <td title='pageTests.ProductsPageTest.verifyProductsPageTitle()'><b>verifyProductsPageTitle</b><br>Test class: pageTests.ProductsPageTest</td>
 <td></td>
 <td>5</td>
-<td>pageTests.ProductsPageTest@618ad2aa</td></tr>
-<tr>
-<td title='pageTests.YourCartPageTest.verifyTitle_YourCartPage()'><b>verifyTitle_YourCartPage</b><br>Test class: pageTests.YourCartPageTest<br>Test method: To verify title of the Page : Your Cart<br>Parameters: standard_user, secret_sauce</td>
-<td></td>
-<td>8</td>
-<td>pageTests.YourCartPageTest@1d540566</td></tr>
+<td>pageTests.ProductsPageTest@70f822e</td></tr>
 <tr>
 <td title='pageTests.YourCartPageTest.verify_Product_In_Cart()'><b>verify_Product_In_Cart</b><br>Test class: pageTests.YourCartPageTest<br>Test method: Adding product to Cart<br>Parameters: standard_user, secret_sauce</td>
 <td></td>
-<td>7</td>
-<td>pageTests.YourCartPageTest@1d540566</td></tr>
+<td>0</td>
+<td>pageTests.YourCartPageTest@1abfe081</td></tr>
+<tr>
+<td title='pageTests.LoginPageTest.verifyLoginPageTest()'><b>verifyLoginPageTest</b><br>Test class: pageTests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>pageTests.LoginPageTest@3efedc6f</td></tr>
+<tr>
+<td title='pageTests.ProductsPageTest.verifyProductIsPresent()'><b>verifyProductIsPresent</b><br>Test class: pageTests.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>pageTests.ProductsPageTest@70f822e</td></tr>
+<tr>
+<td title='pageTests.YourCartPageTest.verifyTitle_YourCartPage()'><b>verifyTitle_YourCartPage</b><br>Test class: pageTests.YourCartPageTest<br>Test method: To verify title of the Page : Your Cart<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>6</td>
+<td>pageTests.YourCartPageTest@1abfe081</td></tr>
 <tr>
 <td title='pageTests.ProductsPageTest.addProductToCart()'><b>addProductToCart</b><br>Test class: pageTests.ProductsPageTest</td>
 <td></td>
 <td>5</td>
-<td>pageTests.ProductsPageTest@618ad2aa</td></tr>
-<tr>
-<td title='pageTests.LoginPageTest.verifyLoginPageTest()'><b>verifyLoginPageTest</b><br>Test class: pageTests.LoginPageTest</td>
-<td></td>
-<td>7</td>
-<td>pageTests.LoginPageTest@1aa6e3c0</td></tr>
+<td>pageTests.ProductsPageTest@70f822e</td></tr>
 </table><p>
 </body>
 </html>

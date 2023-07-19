@@ -27,8 +27,21 @@ public class BaseClass {
 		WebDriver driver;
 		Properties prop;
 
-		String hubURL = "http://192.168.1.2:4444";
+		String hubURL = "http://192.168.1.8:4444";
 		
+		//java -Dwebdriver.chrome.driver="/Users/utippana/LearnAutomation/seleniumgrid/chromedriver" -jar selenium-server-4.8.3.jar hub
+		//-node http://192.168.1.16:4444/grid/register -port 5566
+		
+		/*
+		 * Starting hub with specific chromedriver version: java -Dwebdriver.chrome.driver="/Users/utippana/LearnAutomation/seleniumgrid/chromedriver" 
+		 * -jar selenium-server-4.8.3.jar hub
+		 */
+		
+		/*
+		 * Starting node with specific chromedriver version: java -Dwebdriver.chrome.driver="/Users/utippana/LearnAutomation/seleniumgrid/chromedriver" 
+		 * -jar selenium-server-4.8.3.jar node --port 5566
+
+		 */
 		private static ThreadLocal<WebDriver> tdriver =  new ThreadLocal<WebDriver>();
 		
 		public WebDriver initializeDriver() throws MalformedURLException{
