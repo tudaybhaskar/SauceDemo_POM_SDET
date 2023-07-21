@@ -27,7 +27,7 @@ public class BaseClass {
 		WebDriver driver;
 		Properties prop;
 
-		String hubURL = "http://192.168.1.8:4444";
+		String hubURL = "http://192.168.1.4:4444";
 		
 		//java -Dwebdriver.chrome.driver="/Users/utippana/LearnAutomation/seleniumgrid/chromedriver" -jar selenium-server-4.8.3.jar hub
 		//-node http://192.168.1.16:4444/grid/register -port 5566
@@ -62,6 +62,7 @@ public class BaseClass {
 				//driver = new ChromeDriver();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
+				options.setAcceptInsecureCerts(true);
 				
 				//WebDriverManager.chromedriver().setup();
 				//driver = new ChromeDriver(options);

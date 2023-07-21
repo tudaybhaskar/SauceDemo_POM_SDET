@@ -9,7 +9,7 @@ import io.qameta.allure.Step;
 
 public class LoginPage {
 	
-	WebDriver driver;
+	private WebDriver driver;
 	// Page Factory - Object Repository
 	@FindBy(id = "user-name")
 	WebElement userName;

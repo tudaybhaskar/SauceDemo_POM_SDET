@@ -14,15 +14,17 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>3.8.1</maven.compiler.source>
+    <maven.compiler.target>3.8.1</maven.compiler.target>
+    <maven.surefire.version>2.22.2</maven.surefire.version>
     <selenium-version>4.8.1</selenium-version>
-  	<testng.version>7.6.1</testng.version>
+    <java.version>1.8</java.version>
+  	<testng.version>7.6.0</testng.version>
   	<log4j-version>2.14.1</log4j-version>
   	<aspectj.version>1.9.6</aspectj.version>
   	<extentreports-version>5.0.8</extentreports-version>
   	<ashot-version>1.5.4</ashot-version>
-  	<suiteXmlFile>testng.xml</suiteXmlFile>
+  	<suiteXmlFile>src/test/resources/TestSuite.xml</suiteXmlFile>
   </properties>
 
   <dependencies>
@@ -102,6 +104,7 @@
 		    <groupId>io.qameta.allure</groupId>
 		    <artifactId>allure-testng</artifactId>
 		    <version>2.22.0</version>
+		    <!--<scope>test</scope> As i mentioned "Test", it is throwing error in Loginpage as they are in src/main -->
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
@@ -129,21 +132,39 @@
 
   <build>
   		<plugins>
+  		<plugin>
+  		<groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-compiler-plugin</artifactId>
+			  <version>3.8.1</version>
+			  <configuration>
+			    <release>11</release>
+			  </configuration>
+			</plugin>
   			<!--<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-compiler-plugin</artifactId>
 			    <configuration>
-			     <source>3.8.1</source>
-			     <target>3.8.1</target>
+			     <source>{java.version}</source>
+			     <target>{java.version}</target>
 			    </configuration>
-  	 		</plugin> -->
+  	 		</plugin-->
   	 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-		<plugin>
+		<!--plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
 		    <artifactId>maven-compiler-plugin</artifactId>
-		    <version>3.8.1</version>
-		</plugin>
-  	 		
+		    <version>${maven.compiler.version}</version>
+		    <configuration>
+				<encoding>UTF-8</encoding>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+			</configuration>
+
+		</plugin-->
+  	 		<plugin>
+			        <groupId>io.qameta.allure</groupId>
+			        <artifactId>allure-maven</artifactId>
+			        <version>2.10.0</version>
+			 </plugin>
   	 		<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -153,13 +174,14 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
+                    <testFailureIgnore>true/</testFailureIgnore>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
 
-                    <systemPropertyVariables>
-    					<allure.results.directory>./target/allure-results</allure.results.directory>
-     				</systemPropertyVariables>
+                    <!--<systemPropertyVariables>
+    					<allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+     				</systemPropertyVariables-->
 
                 </configuration>
                 <dependencies>
@@ -171,5 +193,17 @@
 				</dependencies>
 			</plugin>
   		</plugins>
+  		
   	</build>
+  	<reporting>
+  		<excludeDefaults>true</excludeDefaults>
+  		<plugins>
+  	
+			<plugin>
+			        <groupId>io.qameta.allure</groupId>
+			        <artifactId>allure-maven</artifactId>
+			        <version>2.10.0</version>
+			 </plugin>
+		</plugins>
+	</reporting>
 </project>

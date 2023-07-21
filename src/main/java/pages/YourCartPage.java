@@ -43,6 +43,7 @@ public class YourCartPage {
 	JavascriptExecutor js = (JavascriptExecutor) driver; 
 	
 	//Actions
+	@Step("Get page title")
 	public String getPageTitle() {
 		String title = title_YourCart.getText();
 		return title;

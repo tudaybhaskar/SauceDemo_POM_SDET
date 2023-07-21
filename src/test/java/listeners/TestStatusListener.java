@@ -11,7 +11,7 @@ public class TestStatusListener extends BaseClass implements ITestListener {
 	
 	
 
-	@Override
+	/*@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
@@ -45,5 +45,5 @@ public class TestStatusListener extends BaseClass implements ITestListener {
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		
-	}
+	}*/
 }

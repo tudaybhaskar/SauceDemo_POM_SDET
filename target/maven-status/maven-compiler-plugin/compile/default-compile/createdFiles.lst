@@ -1,7 +1,0 @@
-base/BaseClass.class
-util/CustomJavaUtils.class
-util/TestUtil.class
-util/ExcelUtil.class
-pages/YourCartPage.class
-pages/ProductsPage.class
-pages/LoginPage.class

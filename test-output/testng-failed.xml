@@ -9,6 +9,7 @@
       <class name="pageTests.YourCartPageTest">
         <methods>
           <include name="verify_removeProduct_From_CartPage" invocation-numbers="0"/>
+          <include name="verifyTitle_YourCartPage" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

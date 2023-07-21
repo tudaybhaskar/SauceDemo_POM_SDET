@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTests.YourCartPageTest" class="method navigator-link" hash-for-method="verifyTitle_YourCartPage(standard_user, secret_sauce)">verifyTitle_YourCartPage(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pageTests.YourCartPageTest" class="method navigator-link" hash-for-method="verify_removeProduct_From_CartPage(standard_user, secret_sauce)">verify_removeProduct_From_CartPage(standard_user, secret_sauce)</a> <!-- method navigator-link -->
@@ -138,11 +143,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pageTests.YourCartPageTest" class="method navigator-link" hash-for-method="verifyTitle_YourCartPage(standard_user, secret_sauce)">verifyTitle_YourCartPage(standard_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pageTests.YourCartPageTest" class="method navigator-link" hash-for-method="verify_Product_In_Cart(standard_user, secret_sauce)">verify_Product_In_Cart(standard_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -166,6 +166,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyTitle_YourCartPage(standard_user, secret_sauce)">
+                  </a> <!-- verifyTitle_YourCartPage(standard_user, secret_sauce) -->
+                  <span class="method-name">verifyTitle_YourCartPage</span>
+                  <span class="parameters">(standard_user, secret_sauce)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Your cart page is not displayed expected [Your Car] but found [Your Cart]
+	at pageTests.YourCartPageTest.verifyTitle_YourCartPage(YourCartPageTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify title of the Page : Your Cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verify_removeProduct_From_CartPage(standard_user, secret_sauce)">
                   </a> <!-- verify_removeProduct_From_CartPage(standard_user, secret_sauce) -->
                   <span class="method-name">verify_removeProduct_From_CartPage</span>
@@ -182,49 +198,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pageTests.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginPageTest">
-                  </a> <!-- verifyLoginPageTest -->
-                  <span class="method-name">verifyLoginPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pageTests.YourCartPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTitle_YourCartPage(standard_user, secret_sauce)">
-                  </a> <!-- verifyTitle_YourCartPage(standard_user, secret_sauce) -->
-                  <span class="method-name">verifyTitle_YourCartPage</span>
-                  <span class="parameters">(standard_user, secret_sauce)</span>
-                  <em>
-(To verify title of the Page : Your Cart)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_Product_In_Cart(standard_user, secret_sauce)">
-                  </a> <!-- verify_Product_In_Cart(standard_user, secret_sauce) -->
-                  <span class="method-name">verify_Product_In_Cart</span>
-                  <span class="parameters">(standard_user, secret_sauce)</span>
-                  <em>
-(Adding product to Cart)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -250,6 +223,39 @@
                   <a name="verifyProductsPageTitle">
                   </a> <!-- verifyProductsPageTitle -->
                   <span class="method-name">verifyProductsPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pageTests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTest">
+                  </a> <!-- verifyLoginPageTest -->
+                  <span class="method-name">verifyLoginPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pageTests.YourCartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Product_In_Cart(standard_user, secret_sauce)">
+                  </a> <!-- verify_Product_In_Cart(standard_user, secret_sauce) -->
+                  <span class="method-name">verify_Product_In_Cart</span>
+                  <span class="parameters">(standard_user, secret_sauce)</span>
+                  <em>
+(Adding product to Cart)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,36 +321,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_removeProduct_From_CartPage')
 data.setCell(0, 2, 'pageTests.YourCartPageTest')
-data.setCell(0, 3, 16023);
+data.setCell(0, 3, 15827);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyTitle_YourCartPage')
 data.setCell(1, 2, 'pageTests.YourCartPageTest')
-data.setCell(1, 3, 6009);
+data.setCell(1, 3, 5789);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addProductToCart')
 data.setCell(2, 2, 'pageTests.ProductsPageTest')
-data.setCell(2, 3, 5291);
+data.setCell(2, 3, 5314);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyProductsPageTitle')
 data.setCell(3, 2, 'pageTests.ProductsPageTest')
-data.setCell(3, 3, 5041);
+data.setCell(3, 3, 5038);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verify_Product_In_Cart')
 data.setCell(4, 2, 'pageTests.YourCartPageTest')
-data.setCell(4, 3, 899);
+data.setCell(4, 3, 701);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyProductIsPresent')
-data.setCell(5, 2, 'pageTests.ProductsPageTest')
-data.setCell(5, 3, 416);
+data.setCell(5, 1, 'verifyLoginPageTest')
+data.setCell(5, 2, 'pageTests.LoginPageTest')
+data.setCell(5, 3, 384);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLoginPageTest')
-data.setCell(6, 2, 'pageTests.LoginPageTest')
-data.setCell(6, 3, 381);
+data.setCell(6, 1, 'verifyProductIsPresent')
+data.setCell(6, 2, 'pageTests.ProductsPageTest')
+data.setCell(6, 3, 357);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -376,92 +382,94 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyTitle_YourCartPage(standard_user, secret_sauce)</span>
-                <span class="method-start">6440 ms</span>
+                <span class="method-start">5213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12463 ms</span>
+                <span class="method-start">11368 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12642 ms</span>
+                <span class="method-start">11508 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Product_In_Cart(standard_user, secret_sauce)</span>
-                <span class="method-start">15884 ms</span>
+                <span class="method-start">15075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16785 ms</span>
+                <span class="method-start">15779 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16921 ms</span>
+                <span class="method-start">15948 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_removeProduct_From_CartPage(standard_user, secret_sauce)</span>
-                <span class="method-start">20184 ms</span>
+                <span class="method-start">19332 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36552 ms</span>
+                <span class="method-start">35528 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageTests.ProductsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">36721 ms</span>
+                <span class="method-start">35676 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">40415 ms</span>
+                <span class="method-start">39144 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45707 ms</span>
+                <span class="method-start">44459 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">45825 ms</span>
+                <span class="method-start">44565 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductIsPresent</span>
-                <span class="method-start">49358 ms</span>
+                <span class="method-start">48092 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49775 ms</span>
+                <span class="method-start">48451 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">49942 ms</span>
+                <span class="method-start">48586 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductsPageTitle</span>
-                <span class="method-start">53783 ms</span>
+                <span class="method-start">52060 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58826 ms</span>
+                <span class="method-start">57099 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageTests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58976 ms</span>
+                <span class="method-start">57245 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTest</span>
-                <span class="method-start">62159 ms</span>
+                <span class="method-start">60412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62542 ms</span>
+                <span class="method-start">60797 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

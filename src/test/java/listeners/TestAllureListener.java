@@ -11,7 +11,6 @@ import org.testng.ITestResult;
 import base.BaseClass;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.listener.TestLifecycleListener;
-import util.ExcelUtil;
 
 public class TestAllureListener extends BaseClass implements ITestListener ,TestLifecycleListener{
 

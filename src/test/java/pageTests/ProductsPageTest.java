@@ -16,6 +16,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pages.LoginPage;
 import pages.ProductsPage;
 import util.CustomJavaUtils;
@@ -44,12 +47,16 @@ public class ProductsPageTest extends BaseClass {
 		
 	}
   @Test
+  @Description("Test case description: Verify Products page title")// coming from allure
+  @Severity(SeverityLevel.NORMAL)
   public void verifyProductsPageTitle() {
 	  String title = productsPage.getProductsPageTitle();
 	  Assert.assertEquals(title, "Products", "ProductsPage is not displayed");
   }
   
   @Test
+  @Description("Test case description: Verify Product Bolt Tt-shirt is present")// coming from allure
+  @Severity(SeverityLevel.BLOCKER)
   public void verifyProductIsPresent() {
 	  Map<String,String> map = productsPage.getProducts_Names();
 	  CustomJavaUtils.printMap(map);
@@ -58,6 +65,8 @@ public class ProductsPageTest extends BaseClass {
   }
   
   @Test
+  @Description("Test case description: Verify Product addition to cart")// coming from allure
+  @Severity(SeverityLevel.MINOR)
   public void addProductToCart() {
 	  boolean actual = productsPage.selectProduct_AddToCart("Sauce Labs Bike Light");
 	  Assert.assertEquals(actual, true, "Product : Sauce Labs Bike Light is not added");

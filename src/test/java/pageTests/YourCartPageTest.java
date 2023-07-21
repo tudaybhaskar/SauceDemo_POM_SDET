@@ -71,7 +71,7 @@ public class YourCartPageTest extends BaseClass  {
 		productsPage.selectProduct_AddToCart(product);
 		yourCartPage = productsPage.clickOnCart();
 		String actualtitle = yourCartPage.getPageTitle();
-		softAssert.assertEquals(actualtitle, "Your Cart", "Your cart page is not displayed");
+		softAssert.assertEquals(actualtitle, "Your Car", "Your cart page is not displayed");
 		softAssert.assertAll();
 	}
 	

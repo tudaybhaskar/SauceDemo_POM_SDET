@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test - SauceLabs Demo Website</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 19 22:59:43 IST 2023</td>
+<td>Started on:</td><td>Fri Jul 21 16:12:28 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69036 ms)</td>
+<tr><td>Total time:</td><td>67 seconds (67382 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 	Product from cart is not removed expected [true] but found [false]
 	at pageTests.YourCartPageTest.verify_removeProduct_From_CartPage(YourCartPageTest.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998748447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1998748447'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503134718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503134718'><pre>java.lang.AssertionError: The following asserts failed:
 	Product from cart is not removed expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
@@ -115,8 +115,51 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>16</td>
-<td>pageTests.YourCartPageTest@1abfe081</td></tr>
+<td>15</td>
+<td>pageTests.YourCartPageTest@52d6cd34</td></tr>
+<tr>
+<td title='pageTests.YourCartPageTest.verifyTitle_YourCartPage()'><b>verifyTitle_YourCartPage</b><br>Test class: pageTests.YourCartPageTest<br>Test method: To verify title of the Page : Your Cart<br>Parameters: standard_user, secret_sauce</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Your cart page is not displayed expected [Your Car] but found [Your Cart]
+	at pageTests.YourCartPageTest.verifyTitle_YourCartPage(YourCartPageTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078890030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078890030'><pre>java.lang.AssertionError: The following asserts failed:
+	Your cart page is not displayed expected [Your Car] but found [Your Cart]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at pageTests.YourCartPageTest.verifyTitle_YourCartPage(YourCartPageTest.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>pageTests.YourCartPageTest@52d6cd34</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -126,35 +169,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pageTests.ProductsPageTest.verifyProductsPageTitle()'><b>verifyProductsPageTitle</b><br>Test class: pageTests.ProductsPageTest</td>
+<td title='pageTests.ProductsPageTest.addProductToCart()'><b>addProductToCart</b><br>Test class: pageTests.ProductsPageTest</td>
 <td></td>
 <td>5</td>
-<td>pageTests.ProductsPageTest@70f822e</td></tr>
-<tr>
-<td title='pageTests.YourCartPageTest.verify_Product_In_Cart()'><b>verify_Product_In_Cart</b><br>Test class: pageTests.YourCartPageTest<br>Test method: Adding product to Cart<br>Parameters: standard_user, secret_sauce</td>
-<td></td>
-<td>0</td>
-<td>pageTests.YourCartPageTest@1abfe081</td></tr>
+<td>pageTests.ProductsPageTest@47a7a101</td></tr>
 <tr>
 <td title='pageTests.LoginPageTest.verifyLoginPageTest()'><b>verifyLoginPageTest</b><br>Test class: pageTests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>pageTests.LoginPageTest@3efedc6f</td></tr>
+<td>pageTests.LoginPageTest@5bb51241</td></tr>
+<tr>
+<td title='pageTests.ProductsPageTest.verifyProductsPageTitle()'><b>verifyProductsPageTitle</b><br>Test class: pageTests.ProductsPageTest</td>
+<td></td>
+<td>5</td>
+<td>pageTests.ProductsPageTest@47a7a101</td></tr>
+<tr>
+<td title='pageTests.YourCartPageTest.verify_Product_In_Cart()'><b>verify_Product_In_Cart</b><br>Test class: pageTests.YourCartPageTest<br>Test method: Adding product to Cart<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>pageTests.YourCartPageTest@52d6cd34</td></tr>
 <tr>
 <td title='pageTests.ProductsPageTest.verifyProductIsPresent()'><b>verifyProductIsPresent</b><br>Test class: pageTests.ProductsPageTest</td>
 <td></td>
 <td>0</td>
-<td>pageTests.ProductsPageTest@70f822e</td></tr>
-<tr>
-<td title='pageTests.YourCartPageTest.verifyTitle_YourCartPage()'><b>verifyTitle_YourCartPage</b><br>Test class: pageTests.YourCartPageTest<br>Test method: To verify title of the Page : Your Cart<br>Parameters: standard_user, secret_sauce</td>
-<td></td>
-<td>6</td>
-<td>pageTests.YourCartPageTest@1abfe081</td></tr>
-<tr>
-<td title='pageTests.ProductsPageTest.addProductToCart()'><b>addProductToCart</b><br>Test class: pageTests.ProductsPageTest</td>
-<td></td>
-<td>5</td>
-<td>pageTests.ProductsPageTest@70f822e</td></tr>
+<td>pageTests.ProductsPageTest@47a7a101</td></tr>
 </table><p>
 </body>
 </html>

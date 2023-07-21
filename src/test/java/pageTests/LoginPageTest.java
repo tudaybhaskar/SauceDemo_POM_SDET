@@ -28,6 +28,9 @@ import org.testng.annotations.Test;
 import base.BaseClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pages.LoginPage;
 import pages.ProductsPage;
 import util.TestUtil;
@@ -35,11 +38,11 @@ import util.TestUtil;
 @Listeners({ listeners.TestAllureListener.class })
 public class LoginPageTest extends BaseClass {
 	
-	WebDriver driver;
-	LoginPage loginPage;
-	ProductsPage productsPage;
-	TestUtil testUtil;
-	Properties prop;
+	private WebDriver driver;
+	private LoginPage loginPage;
+	private ProductsPage productsPage;
+	private TestUtil testUtil;
+	private Properties prop;
 
 @BeforeMethod
 public void setUp() throws MalformedURLException {
@@ -52,6 +55,8 @@ public void setUp() throws MalformedURLException {
 	}
 	
   @Test
+  @Description("Test case description: Verify Login page title")// coming from allure
+  @Severity(SeverityLevel.CRITICAL)// coming from allure
   public void verifyLoginPageTest() {
 	  //productsPage = loginPage.login("standard_user","secret_sauce");
 	  productsPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
