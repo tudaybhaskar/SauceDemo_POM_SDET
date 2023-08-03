@@ -20,6 +20,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import util.BrowserDriverType;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -44,7 +45,7 @@ public class BaseClass {
 		 */
 		private static ThreadLocal<WebDriver> tdriver =  new ThreadLocal<WebDriver>();
 		
-		public WebDriver initializeDriver() throws MalformedURLException{
+		public WebDriver initializeDriver(BrowserDriverType browserDriverType) throws MalformedURLException{
 			try {
 				prop = new Properties();
 				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/config/config.properties");
@@ -55,9 +56,9 @@ public class BaseClass {
 				e.printStackTrace();
 			}
 			String browser = prop.getProperty("browser");
-		
-			if (browser.equals("chrome")) {
-
+			
+			switch(browserDriverType) {
+			case Chrome:
 				//System.setProperty("webdriver.chrome.driver","/Users/udayabhaskar/Documents/eclipseWorkspace/SauceDemo_POM_SDET/browserDrivers/chromedriver");
 				//driver = new ChromeDriver();
 				ChromeOptions options = new ChromeOptions();
@@ -73,14 +74,10 @@ public class BaseClass {
 				
 				options.merge(cap);
 				driver = new RemoteWebDriver(new URL(hubURL),options);
-
-				
-			} else if (browser.equals("safari")) {
+			case Safari:
 				WebDriverManager.getInstance(SafariDriver.class).setup();
 				driver = new SafariDriver();
-				
-		
-			} else {
+			default:
 				System.out.println("Please pass the correct browser name....");
 			}
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));

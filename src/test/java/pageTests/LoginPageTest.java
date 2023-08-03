@@ -33,6 +33,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import pages.LoginPage;
 import pages.ProductsPage;
+import util.BrowserDriverType;
 import util.TestUtil;
 
 @Listeners({ listeners.TestAllureListener.class })
@@ -47,7 +48,7 @@ public class LoginPageTest extends BaseClass {
 @BeforeMethod
 public void setUp() throws MalformedURLException {
 		BaseClass baseClass = new BaseClass();
-		driver = baseClass.initializeDriver();//launches url as well;
+		driver = baseClass.initializeDriver(BrowserDriverType.Chrome);//launches url as well;
 		loginPage = new LoginPage(driver);
 		testUtil = new TestUtil(driver);
 		prop = baseClass.getProperties();
